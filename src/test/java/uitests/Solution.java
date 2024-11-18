@@ -34,7 +34,7 @@ public class Solution extends WebDriverTestCase {
         login.fillPassword("password");
         login.clickLoginButton();
 
-        assertEquals(Home.home(driver).okAlert().getText(), "Signed in successfully.");
+        assertEquals(Home.home(driver).okAlert().getText(), "Welcome to APP.");
     }
 
     @Test
@@ -46,7 +46,7 @@ public class Solution extends WebDriverTestCase {
         login.fillPassword("password");
         login.clickLoginButton();
 
-        assertEquals(login.failAlert().getText(), "Invalid Email or password.");
+        assertEquals(login.failAlert().getText(), "You shall not pass!");
     }
 
 
